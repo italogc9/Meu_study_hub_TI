@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Ítalo Gabriel</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f3ff;
+            color: #272343;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #272343;
+            color: white;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        header h2 {
+            color: #c4b5fd;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+        }
+
+        nav a:hover {
+            color: #c4b5fd;
+        }
+
+        .hero {
+            padding: 85px 8%;
+            text-align: center;
+        }
+
+        .hero span {
+            color: #6d28d9;
+            font-weight: bold;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin: 12px 0;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 0 auto 25px;
+            color: #55516f;
+        }
+
+        .botao {
+            display: inline-block;
+            background: #6d28d9;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .botao:hover {
+            background: #5521a8;
+        }
+
+        section {
+            padding: 45px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .sobre {
+            background: white;
+            text-align: center;
+        }
+
+        .sobre p {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .cartoes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .cartao {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #e2d9ff;
+        }
+
+        .cartao h3 {
+            color: #6d28d9;
+            margin-bottom: 10px;
+        }
+
+        .cartao a {
+            display: inline-block;
+            margin-top: 15px;
+            color: #6d28d9;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #272343;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Ítalo Gabriel</h2>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#projetos">Projetos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <span>PORTFÓLIO ACADÊMICO</span>
+            <h1>Olá, eu sou Ítalo Gabriel!</h1>
+
+            <p>
+                Sou estudante de Ciência da Computação e estou desenvolvendo
+                meus conhecimentos em tecnologia, programação e criação
+                de soluções digitais.
+            </p>
+
+            <a class="botao" href="#projetos">Conheça meus projetos</a>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <h2>Sobre mim</h2>
+
+            <p>
+                Este espaço reúne minha trajetória acadêmica, atividades,
+                projetos e aprendizados durante a graduação em Ciência
+                da Computação. Meu objetivo é continuar aprendendo,
+                colocando conhecimentos em prática e construindo meu
+                caminho na área de tecnologia.
+            </p>
+        </section>
+
+        <section id="projetos">
+            <h2>Meu espaço de aprendizagem</h2>
+
+            <div class="cartoes">
+                <article class="cartao">
+                    <h3>Disciplinas acadêmicas</h3>
+                    <p>
+                        Atividades, anotações e materiais desenvolvidos
+                        ao longo das disciplinas da faculdade.
+                    </p>
+                    <a href="https://github.com/italogc9/Meu_study_hub_TI/tree/main/02_Disciplinas_Atuais"
+                       target="_blank" rel="noopener">
+                        Explorar disciplinas →
+                    </a>
+                </article>
+
+                <article class="cartao">
+                    <h3>Projetos e certificados</h3>
+                    <p>
+                        Um espaço para reunir projetos práticos,
+                        trabalhos pessoais e certificados.
+                    </p>
+                    <a href="https://github.com/italogc9/Meu_study_hub_TI/tree/main/03_Projetos_e_Certificados"
+                       target="_blank" rel="noopener">
+                        Explorar projetos →
+                    </a>
+                </article>
+
+                <article class="cartao">
+                    <h3>Aprendizado contínuo</h3>
+                    <p>
+                        Registro da minha evolução, novas experiências
+                        e conhecimentos adquiridos em tecnologia.
+                    </p>
+                    <a href="https://github.com/italogc9/Meu_study_hub_TI"
+                       target="_blank" rel="noopener">
+                        Visitar meu GitHub →
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ítalo Gabriel Custodio de Abreu | Ciência da Computação</p>
+        <p>Portfólio acadêmico • 2026</p>
+    </footer>
+</body>
+</html>
